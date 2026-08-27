@@ -24,7 +24,7 @@ module cla64_flat(
   // a real signal in the final circuit, it just controls how many times
   // the loop body is elaborated.
   // ---------------------------------------------------------------------
-  genvar i;
+  genvar i, j;
   generate
     for (i = 0; i < 64; i = i + 1) begin : gen_pg
       xor #(2) (p[i], a[i], b[i]);
