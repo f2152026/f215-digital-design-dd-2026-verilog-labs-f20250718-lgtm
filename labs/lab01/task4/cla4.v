@@ -31,7 +31,7 @@ module cla4(
 
   wire p0, p1, p2, p3;
   wire g0, g1, g2, g3;
-  wire c1, c2, c3;
+  wire c1, c2, c3, c4;
 
   xor #(2) (p0, a[0], b[0]);
   xor #(2) (p1, a[1], b[1]);
@@ -70,6 +70,6 @@ module cla4(
   xor #(2) (sum[0], p0, cin);
   xor #(2) (sum[1], p1, c1);
   xor #(2) (sum[2], p2, c2);
-  xor #(2) (sum[3], p3, c3);.
+  xor #(2) (sum[3], p3, c3);
 
 endmodule
